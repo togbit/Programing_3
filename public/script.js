@@ -5,23 +5,26 @@ var matrix = [
 var side = 10;
 var n = m = 80;
 
+var GrassEater = require("./GrassE");
+var mySquareObject = new GrassEater(x, y, index);
+
+
 function setup() {
 
     for (y = 0; y < n; y++) {
         matrix[y] = [];
         for (x = 0; x < n; x++) {
-            //matrix[y][x] = random([0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 4]);
+
             matrix[y][x] = random([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 4, 5]);
         }
 
 
     }
 
-
-    frameRate(20);
+    
     createCanvas(matrix[0].length * side, matrix.length * side);
     background('#acacac');
-   // noStroke();
+    // noStroke();
 
     for (var y = 0; y < matrix.length; y++) {
         for (var x = 0; x < matrix[y].length; x++) {
@@ -47,10 +50,11 @@ function setup() {
 
     }
 }
+var time = frameRate(5);
+function frameRate(frameCount) {
+    return 1000 / frameCount;
+}
 function draw() {
-
-
-
 
 
 
@@ -120,5 +124,4 @@ function draw() {
     }
 
 }
-
-
+setInterval(darw,time);
