@@ -1,62 +1,18 @@
-var matrix = [
-
-];
-//var matrix = [] ;
+/*var matrix = [];
 var side = 10;
 var n = m = 80;
 
-var GrassEater = require("./GrassE");
-var mySquareObject = new GrassEater(x, y, index);
-
-
 function setup() {
 
-    for (y = 0; y < n; y++) {
-        matrix[y] = [];
-        for (x = 0; x < n; x++) {
-
-            matrix[y][x] = random([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 3, 4, 5]);
-        }
-
-
-    }
-
-    
     createCanvas(matrix[0].length * side, matrix.length * side);
     background('#acacac');
-    // noStroke();
 
-    for (var y = 0; y < matrix.length; y++) {
-        for (var x = 0; x < matrix[y].length; x++) {
-            if (matrix[y][x] == 1) {
-                matrix[y][x] = new Grass(x, y, 1);
-            }
-            else if (matrix[y][x] == 2) {
-                matrix[y][x] = new GrassEater(x, y, 2);
-            }
-            else if (matrix[y][x] == 3) {
-                matrix[y][x] = new Gishatich(x, y, 3);
-            }
-            else if (matrix[y][x] == 4) {
-                matrix[y][x] = new Kerpar(x, y, 4);
-            }
-            else if (matrix[y][x] == 5) {
-                matrix[y][x] = new Kerpar_(x, y, 5);
-            }
-            else if (matrix[y][x] == 6) {
-                matrix[y][x] = new Kerpar$(x, y, 6);
-            }
-        }
-
-    }
 }
 var time = frameRate(5);
 function frameRate(frameCount) {
     return 1000 / frameCount;
 }
 function draw() {
-
-
 
     for (var y = 0; y < matrix.length; y++) {
         for (var x = 0; x < matrix[y].length; x++) {
@@ -95,7 +51,6 @@ function draw() {
             }
         }
     }
-
     for (var y = 0; y < matrix.length; y++) {
         for (var x = 0; x < matrix[y].length; x++) {
             if (matrix[y][x].index == 1) {
@@ -113,11 +68,9 @@ function draw() {
             }
             else if (matrix[y][x].index == 5) {
                 matrix[y][x].varak();
-
             }
             else if (matrix[y][x].index == 6) {
                 matrix[y][x].move();
-
             }
 
         }
@@ -125,3 +78,4 @@ function draw() {
 
 }
 setInterval(darw,time);
+*/

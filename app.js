@@ -1,4 +1,5 @@
 var express = require("express");
+var matrix = require("./modules/matrix");
 var app = express();
 
 app.use(express.static("your_project_folder_name"));
@@ -10,3 +11,5 @@ app.get("/", function(req, res){
 app.listen(3000, function(){
    console.log("Example is running on port 3000");
 });
+console.log(matrix);
+
