@@ -1,4 +1,4 @@
-/*module.exports = class Grass extends LivingCreature {
+module.exports = class Grass extends LivingCreature {
 
     getNewCoordinates() {
         this.directions = [
@@ -30,6 +30,6 @@
 }
 
 
-*/
+
 
 

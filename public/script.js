@@ -1,12 +1,8 @@
-/*var matrix = [];
 var side = 10;
-var n = m = 80;
 
 function setup() {
-
     createCanvas(matrix[0].length * side, matrix.length * side);
     background('#acacac');
-
 }
 var time = frameRate(5);
 function frameRate(frameCount) {
@@ -78,4 +74,3 @@ function draw() {
 
 }
 setInterval(darw,time);
-*/

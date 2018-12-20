@@ -1,12 +1,4 @@
-
-
-
-
-
-
-
-
-/*module.exports = class Kerpar {
+module.exports = class Kerpar {
     constructor(x, y, index) {
         this.x = x;
         this.y = y;
@@ -99,4 +91,3 @@
         }
     }
 }
-*/
